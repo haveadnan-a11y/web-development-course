@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My planet card</title>
+        <style>
+            body{
+                font-family:arial;
+                background:#f0f4ff;
+                padding:30px;
+                text-align:center;
+            }
+            h1{
+                color:#ff5a43;
+
+            }
+            p{color:#555;}
+            .cards{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top: 25px;
+        }
+        .card{
+            background:white;
+            border:3px solid #ff5a43;
+border-radius:12px;
+padding:20px;
+width:200px;
+
+        }
+        .planet-name{
+            font-size:22px;
+            font-weight:bold;
+            color:#333;
+        }
+        .planet-fact{color:#666; margin-top:10px; font-size:14px;
+        }
+        button{
+            background:#ff5a43;
+            color:white;
+            border:none;
+
+            padding:12px 27px;
+            border-radius:7px;
+            cursor:pointer;
+            font-size:16px;
+            margin-top:10px;
+
+
+
+
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>My PLANET CARDS</h1>
+        <button onclick="showplanet()">Show planet</button>
+        <div id="cards">
+            <div id="card1"></div>
+                <div id="card2"></div>
+                    <div id="card3"></div>
+                    </div>
+                        <script>
+                            class Planet{
+
+                            
+
+                            
+                            constructor(name,fact){
+
+                            
+                            this.name=name;
+                            this.fact=fact;
+                            }
+                            describe(){
+                                return this.name+ ":" + this.fact;
+                                
+
+                            s
+                        }
+                    }
+                    function showplanet(){
+let p1=new Planet("Earth"," the only planet with life");
+let p2=new Planet("Mars","known as red planet");
+let p3=new Planet("Saturn","has rings made of ice");
+document.getElementById("card1").innerHTML=
+"<div class='cards'><div class='planet-name'>"+p1.name+ "</div>"+ "<div class='planet-fact'>"+ p1.describe()+"</div> </div>";
+document.getElementById("card2").innerHTML=
+"<div class='cards'><div class='planet-name'>"+p2.name+ "</div>"+ "<div class='planet-fact'>"+ p2.describe()+"</div> </div>";
+document.getElementById("card3").innerHTML=
+"<div class='cards'><div class='planet-name'>"+p3.name+ "</div>"+ "<div class='planet-fact'>"+ p3.describe()+"</div> </div>";
+
+
+
+
+
+                    }
+                    
+                        </script>
+                    
+                
+            
+        
+    </body>
+</html>

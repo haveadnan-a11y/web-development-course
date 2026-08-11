@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#252525;
+    font-family:Baloo Tamma cursive;
+
+}
+/*Main heading font*/
+.m-heading{
+    font-family:Roboto slab,sans-serif;
+}
+.text-white{
+    color:white;
+
+}
+*/Main container height*/
+.main-container{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-image:url(https://github.com/harshacc031-dot/img/blob/main/1.png?raw=true);
+    background-attachment:fixed;
+    background-size:cover;
+}
+*/aligning items in main row*/
+.main-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+*/Changing name font size*/
+.main-row h1{
+    font-size:5rem;
+}
+/*Making the min image the siz eof the screen*/
+.main-row img{
+    
+    width:auto;
+    height:100vh;
+}
+

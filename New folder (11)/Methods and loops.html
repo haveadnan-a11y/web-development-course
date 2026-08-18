@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Methods and Loops</title>
+</head>
+<body>
+
+<script>
+    // Printing a random set of numbers
+    document.write("<h2>Random Numbers</h2>");
+
+    for (let i = 1; i <= 5; i++) {
+        let num = Math.floor(Math.random() * 100) + 1;
+        document.write(num + "<br>");
+    }
+
+    // Printing current date
+    document.write("<h2>Current Date</h2>");
+
+    let date = new Date();
+    document.write(date);
+
+    // Printing a rounded random number
+    document.write("<h2>Rounded Random Number</h2>");
+
+    let randomNumber = Math.random() * 10;
+    document.write(Math.round(randomNumber));
+</script>
+
+</body>
+</html>
